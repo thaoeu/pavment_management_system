@@ -1,0 +1,63 @@
+{{define "detail"}}
+    <link rel="stylesheet" href="{{.themeHLightCss}}/darcula.css" type="text/css">
+    <link rel="stylesheet" href="{{.themeShareCss}}/share.min.css"  type="text/css">
+    <script src="{{.themeShareJs}}/qrcode.js" ></script>
+    <script src="{{.themeHLightJs}}/highlight.pack.js" ></script>
+    <script >hljs.initHighlightingOnLoad();</script>
+
+
+    <section id="intro">
+        <div class="container post-detail" >
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+                  <time datetime="{{.post.Post.CreatedAt}}" itemprop="datePublished">
+                      {{.post.Post.CreatedAt}}
+                  </time>
+                        |
+                    {{range $k,$v := .post.Tags}}
+                        <a href='../../tags/{{$v.Name}}'>{{$v.DisplayName}}</a>,
+                    {{end}}
+                </span>
+                <h1>{{ .post.Post.Title}}</h1>
+            </div>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+            {{ .post.Post.Content}}
+            <div class="clearfix"></div>
+            <hr class="nogutter">
+                        <span style="color: #3344de">道路交通管理系统（仅供学习使用，非官网） <a style="color: #f91919" href="https://github.com/thaoeu/pavment_management_system">仓库地址</a></span>
+                    </li>
+                </ul>
+            <hr class="nogutter">
+            <div class="social-share"></div>
+        </div>
+
+        <nav class="m-pagination col-md-8 col-md-offset-2 col-sm-24" role="pagination">
+
+            {{if gt .post.LastPost.Id 0 }}
+                <a class="pull-left" href="/detail/{{.post.LastPost.Id}}" style="float: left;max-width:35%;">
+                    ←
+                    <span style="overflow: hidden;text-overflow:ellipsis;white-space: nowrap;"> {{.post.LastPost.Title}}</span>
+                </a>
+            {{end}}
+
+            {{if gt .post.NextPost.Id 0 }}
+                <a class="pull-right" href="/detail/{{ .post.NextPost.Id}}" style="max-width:35%;float: right;">
+                    <span style="overflow: hidden;text-overflow:ellipsis;white-space: nowrap;max-width: 90%">
+                        {{ .post.NextPost.Title}}
+                    </span>
+                    →
+                </a>
+            {{end}}
+        </nav>
+
+    </div>
+        <div  style="text-align: center;width: 45%;margin: auto;">
+            <div id="gitalk-container"></div>
+        </div>
+    </section>
+
+    <div>
+
+{{end}}
