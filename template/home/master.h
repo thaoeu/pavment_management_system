@@ -5,6 +5,49 @@
 
 <!--[if (gte IE 9)|!(IE)]><!-->
 <span style="display: none">
+#   __  .______    __    __  .______   .___________.      ______   ______   .___  ___.
+#  |  | |   _  \  |  |  |  | |   _  \  |           |     /      | /  __  \  |   \/   |
+#  |  | |  |_)  | |  |__|  | |  |_)  | `---|  |----`    |  ,----'|  |  |  | |  \  /  |
+#  |  | |   ___/  |   __   | |   ___/      |  |         |  |     |  |  |  | |  |\/|  |
+#  |  | |  |      |  |  |  | |  |          |  |      __ |  `----.|  `--'  | |  |  |  |
+#  |__| | _|      |__|  |__| | _|          |__|     (__) \______| \______/  |__|  |__|
+#
+
+
+
+                       ""$o               o$""
+                         ""$o           o$"                      o
+   "$""""o                  "o         $"                 o""" $"
+         "$o                "$o" $o "  $                 o$"
+          "$o               $$$o$$$$o$$$$               $"
+            "oooo      o "" ""$$$$$$$$""o"" oo     oooo"
+             "$$$$$$oo"oo$$$o" o$$$$oo" o$$$o "o$$$$$$$
+                   "$ $$$$$$$$$oo   o$$$$$$$$$o"$"
+                   $ $$$   $$$$$$  o$$$$$$  "$$o"o
+                  $ $$$$o  $$$$$$  $$$$$$$  $$$$o"o
+                 $  $$$$$  $$$$$"   "$$$$$ $$$$$$ $
+                  $o""""" """"         """ """"""$"
+                 $  o$$$$$"""$$$$$"$$$$$""$$$$$ooo"o
+                 $  o"$o $$$$$$$$oo$$$$$$$$o $$""  $
+              oo$     "$$$$$$$$$$$$$$$$$$$$" o" o $oo
+           o$$$"$ $$o"o $$$$$$$"" "$$$$$$$    o$$ $$$$o      IPHPT BUG
+         o$$$$" $ $$$$ o "$$$$$oo o$$$$$$  "o$$$$ $ $$$$$
+        o$$""    $ $$$$$o" "$$$$$$$$$$$$$ o o$$$$$o$   "" $$
+        $$"      $ $$$"  o"o$$$$$$$$$$$$   " "$$$ $       $$o
+       o$$       "o $$    "  $$$$$$$$$$$"o    "$$ $       $$$
+       $$$      oo$ $       o""$$""$$$o "      $"o$o      $$$o
+      o$$$$   o$$$"o"$oo$$$$o" o     $o $$$$$oo$ $$$$o    $$$$
+      $$$$   $$$$" $ $$$$$""   $$  o$$$ """$$$$"o" "$$$o  "$$$o
+      $$$" o """    $ $$$oo   $$$$o" $$   o$$$"o"   """"$  o$$$
+   o$"     $$$       $ "$"" o$"o"$$o$$$$  "$$"o"      o$$     "$oo
+ $ "        $$o       $ "oo$"o$$$"o$o"$$$$o" o"       $$$       ""$o
+$$          $$$o       "o$$o$"$$"$$o$$o$$"$$o"       $$$          ""o
+             $$$        ""$$$ $$$$$$ $$$$ $"        $$$$            $$
+             $$$$           $$$$"$$$o$ $""          $$$
+              $$$$             "$$$ """            $$$$
+              $$""                                 "$$
+           oo$"                                       $ooo
+          $                                             "$$
 
 </span>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
@@ -16,8 +59,8 @@
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="generator" content="道路交通管理系统">
-    <meta name="author" content="单琦俊">
+    <meta name="generator" content="叶落山城秋">
+    <meta name="author" content="叶落山城秋">
     <meta name="description" content="{{ .system.Description }}" />
     <meta name="keywords" content="{{ .system.Keywords }}" />
     <!-- Favicon, (keep icon in root folder) -->
@@ -65,11 +108,11 @@
     </div>
     <!-- Lists in Slidebars -->
     <ul class="sb-menu">
-        <li><a href="/" class="animsition-link" title="Home">首页</a></li>
+        <li><a href="/" class="animsition-link" title="Home">Home</a></li>
         <!-- Dropdown Menu -->
 
         <li>
-            <a class="sb-toggle-submenu">相关<span class="sb-caret"></span></a>
+            <a class="sb-toggle-submenu">Tags<span class="sb-caret"></span></a>
             <ul class="sb-submenu">
                 {{ range $i,$tag := .tags }}
                     <li><a href="/tags/{{$tag.Name}}" target="_BLANK" class="animsition-link">{{$tag.DisplayName}}<small>({{$tag.Num}})</small></a></li>
@@ -79,60 +122,31 @@
 
 
         <li>
-            <a class="sb-toggle-submenu">分类<span class="sb-caret"></span></a>
+            <a class="sb-toggle-submenu">Categories<span class="sb-caret"></span></a>
             <ul class="sb-submenu">
                 {{ range $i,$cate := .cates }}
                     <li><a href="/categories/{{$cate.Cates.Name}}" class="animsition-link">{{ $cate.Html}}{{$cate.Cates.DisplayName}}</a></li>
                 {{end}}
             </ul>
         </li>
-        <li><a href="/archives" class="animsition-link" title="Archives">归档</a></li>
-
 
 
         <li>
-            <a class="sb-toggle-submenu">违章查询<span class="sb-caret"></span></a>
+            <a class="sb-toggle-submenu">Links<span class="sb-caret"></span></a>
             <ul class="sb-submenu">
                 {{ range $i,$link := .links }}
                     <li><a href="{{$link.Link}}" target="_BLANK" class="animsition-link">{{$link.Name}}</a></li>
                 {{end}}
-                <li><a href="http://www.gov.cn/fuwu/bmfw/gabjdcwfcx/index.html"  class="animsition-link">机动车违法查询</a></li>
-				<li><a href="https://hl.122.gov.cn/views/inquiry.html" class="animsition-link">黑龙江省交管局</a></li>
-				<li><a href="http://nm.122.gov.cn/" class="an-l">内蒙古交管局 </a></li>
-				<li><a href="http://bj.122.gov.cn/" class="an-l">北京交管局</a></li>
-				<li><a href="http://ah.122.gov.cn/" class="an-l">安徽交管局</a></li>
-				<li><a href="http://fj.122.gov.cn/" class="an-l">福建交管局</a></li>
-				<li><a href="http://gd.122.gov.cn/" class="an-l">广东交管局</a></li>
-				<li><a href="http://gx.122.gov.cn/" class="an-l">广西交管局</a></li>
-				<li><a href="http://cq.122.gov.cn/" class="an-l">重庆交管局</a></li>
-				<li><a href="http://gz.122.gov.cn/" class="an-l">贵州交管局</a></li>
-				<li><a href="https://gs.122.gov.cn/" class="an-l">甘肃交管局</a></li>
-				<li><a href="https://he.122.gov.cn/" class="an-l">河北交管局</a></li>
-				<li><a href="https://jl.122.gov.cn/" class="an-l">吉林交管局</a></li>
-				<li><a href="https://js.122.gov.cn/" class="an-l">江苏交管局</a></li>
-				<li><a href="https://jx.122.gov.cn/" class="an-l">江西交管局</a></li>
-				<li><a href="https://ha.122.gov.cn/" class="an-l">河南交管局</a></li>
-				<li><a href="https://hb.122.gov.cn/" class="an-l">湖北交管局</a></li>
-				<li><a href="https://hn.122.gov.cn/" class="an-l">湖南交管局</a></li>
-				<li><a href="https://sx.122.gov.cn/" class="an-l">山西交管局</a></li>
-				<li><a href="https://ln.122.gov.cn/" class="an-l">辽宁交管局</a></li>
-				<li><a href="https://sh.122.gov.cn/" class="an-l">上海交管局</a></li>
-				<li><a href="https://sd.122.gov.cn/" class="an-l">山东交管局</a></li>
-				<li><a href="https://sc.122.gov.cn/" class="an-l">四川交管局</a></li>
-				<li><a href="https://sn.122.gov.cn/" class="an-l">陕西交管局</a></li>
-				<li><a href="https://qh.122.gov.cn/" class="an-l">青海交管局</a></li>
-				<li><a href="https://tj.122.gov.cn/" class="an-l">天津交管局</a></li>
-				<li><a href="https://zj.122.gov.cn/" class="an-l">浙江交管局</a></li>
-				<li><a href="https://yn.122.gov.cn/" class="an-l">云南交管局</a></li>
-				<li><a href="https://xz.122.gov.cn/" class="an-l">西藏交管局</a></li>
-				<li><a href="https://xj.122.gov.cn/" class="an-l">新疆交管局</a></li>
+                <li><a href="https://www.iphpt.com/"  class="animsition-link">叶落山城秋</a></li>
             </ul>
         </li>
     </ul>
     <!-- Lists in Slidebars -->
     <ul class="sb-menu secondary">
+        <li><a href="/detail/1" class="animsition-link" title="about">About</a></li>
 {{/*        <li><a href="atom.xml" class="animsition-link" title="rss">RSS</a></li>*/}}
-<!--        <li><a href="/rss" class="animsition-link" title="Rss">Rss</a></li>-->
+        <li><a href="/rss" class="animsition-link" title="Rss">Rss</a></li>
+        <li><a href="/archives" class="animsition-link" title="Archives">Archives</a></li>
 
     </ul>
 </div>
@@ -160,20 +174,18 @@
                 <nav>
                     <ul class="nav">
                         <li><a href="/" class="animsition-link">{{.Title}}</a></li>
-                        <li class="nolink"><span>道路交通管理系统 </span></li>
-						<!--                        <li><a href="https://github.com/xzghua" title="Github" target="_blank"><i class="icon-github"></i></a></li>-->
-						<!--                        <li><a href="http://weibo.com/ylsc633?refer_flag=1001030101_&is_hot=1" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a></li>-->
-                        <li class="nolink"><span><a href="http://www.iphpt.com/detail/1/">意见箱</a></span></li>
-
-						<!--
+                        <li class="nolink"><span>叶落山城秋 </span></li>
+                        <li><a href="https://github.com/xzghua" title="Github" target="_blank"><i class="icon-github"></i></a></li>
+                        <li><a href="http://weibo.com/ylsc633?refer_flag=1001030101_&is_hot=1" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a></li>
+                        <li class="nolink"><span><a href="http://www.iphpt.com/detail/1/">给我留言</a></span></li>
+                        <li class="nolink"><span><a href="http://www.g9zz.com" target="_blank">G9ZZ</a></span></li>
                         <li class="nolink"><span>Welcome!</span></li>
-						-->
                     </ul>
                 </nav>
                 <!--// Info-bar -->
             </div>
             <!-- // .container -->
-            <div class="learnmore sb-toggle-right">菜单</div>
+            <div class="learnmore sb-toggle-right">More</div>
             <button type="button" class="navbar-toggle menu-icon sb-toggle-right" title="More">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar before"></span>
@@ -204,7 +216,7 @@
     <section id="statement">
         <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
             <div class="row">
-                <p>道路交通管理系统（仅供学习使用，非官网）</p>
+                <p>当你能力不能满足你的野心的时候,你就该沉下心来学习</p>
             </div>
         </div>
     </section>
@@ -216,15 +228,28 @@
 
     <footer>
         <div class="container">
-			<div style="color:#F00" onclick="window.location.href= 'https://beian.miit.gov.cn';return false">
-				黑ICP备19007841号-2
+            <div>
+                <p>欢迎加入PHP交流群(QQ群号):440221268</p>
+            </div>
+            <div>
+                <p>欢迎加入Golang交流群(QQ群号):423069874</p>
             </div>
         </div>
         <div class="container">
             <div class="copy">
-                <p style="color:#F00">
-                    &copy; 2020<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, 道路交通管理系统 By 单琦俊.
+                <p>
+                    &copy; 2014<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By 叶落山城. All Rights Reserved.
+                    <a style="color: #666;" target="_blank" href="http://www.beian.miit.gov.cn/">{{ .system.RecordNumber }}</a>
                 </p>
+
+            </div>
+            <div class="social">
+                <ul>
+                    <li><a href="https://github.com/izghua" title="Github" target="_blank"><i class="icon-github"></i></a>&nbsp;</li>
+                    <li><a href="http://weibo.com/ylsc633" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a>&nbsp;</li>
+                </ul>
+
+            </div>
 
             <div class="clearfix"> </div>
         </div>
@@ -275,4 +300,5 @@
 
 </body>
 </html>
+
 
