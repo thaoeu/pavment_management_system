@@ -32,24 +32,52 @@
 			background-color: #ff9900;
 			border-radius: 7px;
 			border:none;
+			width:100px;
+			color:black;
+			font-size:12px;
 		}
 		.b2 {
 			background-color: #2d8cf0;
 			border-radius: 7px;
 			border:none;
+			width:100px;
+			color:black;
+			font-size:12px;
 		}
 		.b3 {
 			background-color: #e46cbb;
 			border-radius: 7px;
-			border:none;
-        }
+			list-style-type:none;
+			width:100px;
+		}
+		
     </style>
 </head>
 <body>
 	<h1>  <br> </h1>
-	<button class="b1" onclick="window.location.href='/archives'">红色按钮<br> a</button>
+	<button class="b1" onclick="window.location.href='/archives'">归档查询 </button>
 	<button class="b2">蓝色按钮<br> </button>
-	<button class="b3">紫罗兰色按钮<br> </button>
+	<!--	<button class="b3">紫罗兰色按钮<br> </button> -->
+        <li class="b3">
+            <a class="sb-toggle-submenu">分类<span class="sb-caret"></span></a>
+            <ul class="sb-submenu">
+                {{ range $i,$cate := .cates }}
+                    <li><a href="/categories/{{$cate.Cates.Name}}" class="animsition-link">{{ $cate.Html}}{{$cate.Cates.DisplayName}}</a></li>
+                {{end}}
+            </ul>
+        </li>
+		<br>
+
+        <li class="b3">
+            <a class="sb-toggle-submenu">Tags<span class="sb-caret"></span></a>
+            <ul class="sb-submenu">
+                {{ range $i,$tag := .tags }}
+                    <li><a href="/tags/{{$tag.Name}}" target="_BLANK" class="animsition-link">{{$tag.DisplayName}}<small>({{$tag.Num}})</small></a></li>
+                {{ end }}
+            </ul>
+        </li>
+
+
 </body>
 
                         <h2></h2>
