@@ -68,44 +68,44 @@ func (h *HomeStatistics) Index(c *gin.Context) {
 
 	var data []interface{}
 	pcnt := Res{
-		Title: "文章总数",
+		Title: "文章",
 		Icon:  "ios-book-outline",
 		Count: postCnt,
 		Color: "#ff9900",
 	}
 	data = append(data, pcnt)
 	ucnt := Res{
-		Title: "用户总数",
+		Title: "管理员",
 		Icon:  "md-person-add",
 		Count: userCnt,
 		Color: "#2d8cf0",
 	}
 	data = append(data, ucnt)
 	lcnt := Res{
-		Title: "外链总数",
+		Title: "查询入口",
 		Icon:  "ios-link",
 		Count: linkCnt,
 		Color: "#E46CBB",
 	}
 	data = append(data, lcnt)
 	ccnt := Res{
-		Title: "分类总数",
+		Title: "类目",
 		Icon:  "md-locate",
 		Count: cateCnt,
 		Color: "#19be6b",
 	}
 	data = append(data, ccnt)
 	tcnt := Res{
-		Title: "标签总数",
+		Title: "关键词",
 		Icon:  "md-share",
 		Count: tagCnt,
 		Color: "#39ed14",
 	}
 	data = append(data, tcnt)
 	qcnt := Res{
-		Title: "未知BUG",
-		Icon:  "ios-bug",
-		Count: 998,
+		Title: "访客",
+		Icon:  "md-person-add",
+		Count: 48,
 		Color: "#ed3f14",
 	}
 	data = append(data, qcnt)

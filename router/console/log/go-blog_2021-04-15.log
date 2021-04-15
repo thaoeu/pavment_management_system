@@ -1,0 +1,2 @@
+2021/04/15 11:57:09 mail.go:43:ERROR IP=9.9.9.135 method=mail.EmailType.CheckIsNull message=value can not be null
+2021/04/15 11:57:09 default.go:123:ERROR IP=9.9.9.135 method=conf.MailInit message=value can not be null
