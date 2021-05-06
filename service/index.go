@@ -1,10 +1,3 @@
-/**
- * Created by GoLand.
- * User: zhu
- * Email: ylsc633@gmail.com
- * Date: 2019-05-16
- * Time: 20:17
- */
 package service
 
 import (
