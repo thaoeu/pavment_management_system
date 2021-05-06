@@ -1,9 +1,3 @@
-/**
- * Created by GoLand.
- * User: xzghua@gmail.com
- * Date: 2018-12-02
- * Time: 01:34
- */
 package main
 
 import (
@@ -15,7 +9,6 @@ import (
 
 func main() {
 	conf.DefaultInit()
-	//csrf
 
 	r := router.RoutersInit()
 	fmt.Println("开始运行")
