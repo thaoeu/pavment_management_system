@@ -59,14 +59,14 @@ $$          $$$o       "o$$o$"$$"$$o$$o$$"$$o"       $$$          ""o
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="generator" content="叶落山城秋">
-    <meta name="author" content="叶落山城秋">
+    <meta name="generator" content="thaoeu">
+    <meta name="author" content="thaoeu">
     <meta name="description" content="{{ .system.Description }}" />
     <meta name="keywords" content="{{ .system.Keywords }}" />
     <!-- Favicon, (keep icon in root folder) -->
     <link rel="icon" href="{{.themeImg}}/favicon.ico" type="image/x-icon">
 
-{{/*    <link rel="alternate" href="atom.xml" title="叶落山城秋" type="application/atom+xml">*/}}
+{{/*    <link rel="alternate" href="atom.xml" title="thaoeu" type="application/atom+xml">*/}}
     <link rel="stylesheet" href="{{.themeAllCss}}/all.css" media="screen" type="text/css">
 
 
@@ -137,7 +137,7 @@ $$          $$$o       "o$$o$"$$"$$o$$o$$"$$o"       $$$          ""o
                 {{ range $i,$link := .links }}
                     <li><a href="{{$link.Link}}" target="_BLANK" class="animsition-link">{{$link.Name}}</a></li>
                 {{end}}
-                <li><a href="https://www.iphpt.com/"  class="animsition-link">叶落山城秋</a></li>
+                <li><a href="https://www.thaoeu.site/"  class="animsition-link">thaoeu</a></li>
             </ul>
         </li>
     </ul>
@@ -174,7 +174,7 @@ $$          $$$o       "o$$o$"$$"$$o$$o$$"$$o"       $$$          ""o
                 <nav>
                     <ul class="nav">
                         <li><a href="/" class="animsition-link">{{.Title}}</a></li>
-                        <li class="nolink"><span>叶落山城秋 </span></li>
+                        <li class="nolink"><span>thaoeu </span></li>
                         <li><a href="https://github.com/xzghua" title="Github" target="_blank"><i class="icon-github"></i></a></li>
                         <li><a href="http://weibo.com/ylsc633?refer_flag=1001030101_&is_hot=1" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a></li>
                         <li class="nolink"><span><a href="http://www.iphpt.com/detail/1/">给我留言</a></span></li>
@@ -228,26 +228,12 @@ $$          $$$o       "o$$o$"$$"$$o$$o$$"$$o"       $$$          ""o
 
     <footer>
         <div class="container">
-            <div>
-                <p>欢迎加入PHP交流群(QQ群号):440221268</p>
-            </div>
-            <div>
-                <p>欢迎加入Golang交流群(QQ群号):423069874</p>
-            </div>
         </div>
         <div class="container">
             <div class="copy">
-                <p>
-                    &copy; 2014<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By 叶落山城. All Rights Reserved.
-                    <a style="color: #666;" target="_blank" href="http://www.beian.miit.gov.cn/">{{ .system.RecordNumber }}</a>
-                </p>
 
             </div>
             <div class="social">
-                <ul>
-                    <li><a href="https://github.com/izghua" title="Github" target="_blank"><i class="icon-github"></i></a>&nbsp;</li>
-                    <li><a href="http://weibo.com/ylsc633" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a>&nbsp;</li>
-                </ul>
 
             </div>
 
