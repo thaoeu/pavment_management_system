@@ -1,22 +1,17 @@
-/**
- * Created by GoLand.
- * User: xzghua@gmail.com
- * Date: 2018-12-20
- * Time: 23:36
- */
 package index
 
 import (
+	"html/template"
+	"net/http"
+	"sort"
+	"time"
+
 	"github.com/gin-gonic/gin"
 	"github.com/izghua/zgh"
 	"github.com/thaoeu/pavment_management_system/common"
 	"github.com/thaoeu/pavment_management_system/conf"
 	"github.com/thaoeu/pavment_management_system/entity"
 	"github.com/thaoeu/pavment_management_system/service"
-	"html/template"
-	"net/http"
-	"sort"
-	"time"
 )
 
 type Web struct {

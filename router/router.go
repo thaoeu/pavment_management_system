@@ -1,9 +1,3 @@
-/**
- * Created by GoLand.
- * User: xzghua@gmail.com
- * Date: 2018-12-20
- * Time: 23:24
- */
 package router
 
 import (
