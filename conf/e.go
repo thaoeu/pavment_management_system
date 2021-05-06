@@ -1,12 +1,6 @@
-/**
- * Created by GoLand.
- * User: xzghua@gmail.com
- * Date: 2019-01-12
- * Time: 19:34
- */
 package conf
 
-var Msg  = map[int]string{
+var Msg = map[int]string{
 
 	//default
 	404: "未找到页面~",
@@ -102,6 +96,4 @@ var Msg  = map[int]string{
 	408000004: "文章标签获取失败,请检查后再试",
 	408000005: "文章分类获取失败,请检查后再试",
 	408000006: "归档列表获取失败,请检查后再试",
-
 }
-

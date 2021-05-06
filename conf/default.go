@@ -1,9 +1,3 @@
-/**
- * Created by GoLand.
- * User: xzghua@gmail.com
- * Date: 2018-12-04
- * Time: 22:53
- */
 package conf
 
 import (
@@ -221,11 +215,11 @@ func CnfInit() {
 		TagListKey:            "all:tag",
 		Theme:                 0,
 		Title:                 "默认Title",
-		Keywords:              "默认关键词,叶落山城秋",
+		Keywords:              "默认关键词,thaoeu",
 		Description:           "个人网站,https://github.com/thaoeu/pavment_management_system",
 		RecordNumber:          "000-0000",
 		UserCnt:               2,
-		Author:                "叶落山城秋",
+		Author:                "thaoeu",
 		Email:                 "",
 		PostIndexKey:          "index:all:post:list",
 		TagPostIndexKey:       "index:all:tag:post:list",

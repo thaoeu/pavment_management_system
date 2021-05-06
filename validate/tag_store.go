@@ -1,10 +1,3 @@
-/**
- * Created by GoLand.
- * User: zhu
- * Email: ylsc633@gmail.com
- * Date: 2019-04-23
- * Time: 17:46
- */
 package validate
 
 import (

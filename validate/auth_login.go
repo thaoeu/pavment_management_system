@@ -1,9 +1,3 @@
-/**
- * Created by GoLand.
- * User: xzghua@gmail.com
- * Date: 2019-05-10
- * Time: 23:23
- */
 package validate
 
 import (

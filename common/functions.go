@@ -1,9 +1,3 @@
-/**
- * Created by GoLand.
- * User: xzghua@gmail.com
- * Date: 2019-01-11
- * Time: 23:14
- */
 package common
 
 import (
@@ -11,27 +5,25 @@ import (
 	"time"
 )
 
-func Offset(page string,limit string) (limitInt int,offset int) {
-	pageInt,err := strconv.Atoi(page)
+func Offset(page string, limit string) (limitInt int, offset int) {
+	pageInt, err := strconv.Atoi(page)
 	if err != nil {
 		pageInt = 1
 	}
-	limitInt,err = strconv.Atoi(limit)
+	limitInt, err = strconv.Atoi(limit)
 	if err != nil {
 		limitInt = 20
 	}
 
-	return limitInt,(pageInt - 1) * limitInt
+	return limitInt, (pageInt - 1) * limitInt
 }
 
-
-func GoMerge(arr1 []interface{},arr2 []interface{}) []interface{} {
-	for _,val := range arr2 {
-		arr1 = append(arr1,val)
+func GoMerge(arr1 []interface{}, arr2 []interface{}) []interface{} {
+	for _, val := range arr2 {
+		arr1 = append(arr1, val)
 	}
 	return arr1
 }
-
 
 func GoRepeat(str string, num int) string {
 	var i int
@@ -44,12 +36,12 @@ func GoRepeat(str string, num int) string {
 	return newStr
 }
 
-func MyPaginate(count int64,limit int,page int) Paginate {
-	res := round(int(count),limit)
+func MyPaginate(count int64, limit int, page int) Paginate {
+	res := round(int(count), limit)
 	totalPage := res
 
 	lastPage := 0
-	if page - 1 <= 0 {
+	if page-1 <= 0 {
 		lastPage = 1
 	} else {
 		lastPage = page - 1
@@ -63,36 +55,34 @@ func MyPaginate(count int64,limit int,page int) Paginate {
 	}
 
 	nextPage := 0
-	if page + 1 >= res {
+	if page+1 >= res {
 		nextPage = res
 	} else {
 		nextPage = page + 1
 	}
 
 	return Paginate{
-		Limit: limit,
-		Count: int(count),
-		Total: totalPage,
-		Last: lastPage,
+		Limit:   limit,
+		Count:   int(count),
+		Total:   totalPage,
+		Last:    lastPage,
 		Current: currentPage,
-		Next:  nextPage,
+		Next:    nextPage,
 	}
 }
 
-
-func round(a int,b int) int {
+func round(a int, b int) int {
 	rem := a % b
 	dis := a / b
 	if rem > 0 {
-		return dis+1
+		return dis + 1
 	} else {
 		return dis
 	}
 }
 
-
 func Rem(divisor int) bool {
-	if (divisor+1) % 4 == 0 {
+	if (divisor+1)%4 == 0 {
 		return true
 	} else {
 		return false

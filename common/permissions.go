@@ -1,12 +1,6 @@
-/**
- * Created by GoLand.
- * User: xzghua@gmail.com
- * Date: 2019-05-13
- * Time: 22:39
- */
 package common
 
-var Permissions  = []string{
+var Permissions = []string{
 	"GET/console.post.index",
 	"GET/console.post.create",
 	"POST/console.post.store",
@@ -38,9 +32,9 @@ var Permissions  = []string{
 	"DELETE/console.auth.cache",
 }
 
-func CheckPermissions(permission string,method string) bool  {
-	for _,v := range Permissions  {
-		if v == method + "/" + permission {
+func CheckPermissions(permission string, method string) bool {
+	for _, v := range Permissions {
+		if v == method+"/"+permission {
 			return true
 		}
 	}

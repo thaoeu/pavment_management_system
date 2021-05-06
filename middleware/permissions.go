@@ -1,9 +1,3 @@
-/**
- * Created by GoLand.
- * User: xzghua@gmail.com
- * Date: 2019-05-13
- * Time: 22:36
- */
 package middleware
 
 import (
